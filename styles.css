@@ -1,0 +1,366 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  #header {
+    background-color: #ef382a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  #header-img {
+    width: 200px;
+    height: auto;
+    padding: 15px;
+  }
+  
+  #nav-bar {
+    float: right;
+    padding: 0 auto;
+    margin-top: -50px;
+  }
+  
+  nav > .nav-link {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .nav-link:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .form {
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  
+  #motto {
+    margin: 0 auto 5px auto;
+    font-family: "Metal Mania", sans-serif;
+    font-weight: 500;
+    margin-top: 100px;
+  }
+  
+  #email {
+    width: 200px;
+    height: 25px;
+    border: 2px solid maroon;
+  }
+  
+  #email:hover {
+    width: 200px;
+    height: 25px;
+    border: 2px solid maroon;
+    background-color: maroon;
+  }
+  
+  #email:hover::placeholder {
+    color: white;
+  }
+  
+  #submit {
+    margin-top: -3px;
+    width: 75px;
+    height: 25px;
+    font-size: 1rem;
+    background-color: #ef382a;
+    border: none;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  #submit:hover {
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  #features {
+    max-width: 50vw;
+    min-width: min-content;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid black;;
+  }
+  
+  .features-head {
+    font-family: "Concert One", sans-serif;
+    font-weight: 300;
+  }
+  
+  .features-info {
+    text-align: justify;
+    font-family: "Abel", sans-serif;
+    margin: 5px auto 20px auto;
+  }
+  
+  #how-to-play {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #video {
+    margin: 0 auto;
+    max-width: 70vw;
+    min-width: fit-content;
+    max-height: auto;
+    min-height: auto;
+    border: 5px solid #ef382a;
+  }
+  
+  .pricing-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 10px double black;
+    width: 80vw;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+  }
+  
+  #pricing {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 50px 0 50px;
+    margin: 20px 15vw 20px 15vw;
+  }
+  
+  .p1, .p2, .p3 {
+    border: 2px solid #ef382a;
+    text-align: center;
+    width: 40vw;
+    height: fit-content;
+    min-width: 220px;
+    min-height: 350px;
+    margin-bottom: 50px;
+  }
+  
+  .p-heading {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+  }
+  
+  .p-price {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+  }
+  
+  .specs {
+    font-family: "Abel", sans-serif;
+    font-size: 13px;
+    text-align: justify;
+    padding-right: 20px;
+    margin-left: -12px;
+  }
+  
+  .select {
+    position: relative;
+    bottom: -60px;
+    border: none;
+    padding: 5px;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  .select:hover {
+    background-color: #ef382a;
+    color: white;
+    border: none; 
+    cursor: pointer;
+  }
+  
+  .select3 {
+    position: relative;
+    bottom: -28px;
+  }
+  
+  #footer {
+    background-color: #ef382a;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+  }
+  
+  .footer-link {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    margin: 10px 10px 10px 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .footer-link:hover {
+    color: white;
+  }
+  
+  .footer-links {
+    float: right;
+    padding: 0 auto;
+    margin-top: 10px;
+  }
+  
+  #copyright {
+    float: left;
+    padding: 0 auto;
+    margin: 10px 10px 10px 10px;
+    font-size: 1rem;
+    font-family: "Abel", sans-serif;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .footer-links {
+      padding: 0 auto;
+      margin-top: 40px;
+    }
+  
+    #copyright {
+      padding: 0 auto;
+      margin: 0 10px 40px 10px;
+      font-size: .8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    #header {
+      background-color: #ef382a;
+      height: 120px;
+    }
+  
+    #header-img {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 170px;
+      height: auto;
+      padding: 15px;
+    }
+  
+    nav > .nav-link {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      color: white;
+      border-radius: 10px;
+      padding: 5px;
+      margin-top: 20px;
+    }
+    
+    #nav-bar {
+      margin-top: -25px;
+      float: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+  
+    #pricing {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 0;
+      margin: 20px;
+    }
+  
+    .p1, .p2, .p3 {
+      border: 2px solid #ef382a;
+      text-align: center;
+      width: 40vw;
+      min-width: 180px;
+      height: fit-content;
+      min-height: 350px;
+    }
+  
+    #motto {
+      margin: 0 auto 5px auto;
+      font-family: "Metal Mania", sans-serif;
+      font-weight: 500;
+      margin-top: 120px;
+    }
+  
+    .select {
+      position: relative;
+      bottom: -60px;
+    }
+  
+    .select3 {
+      position: relative;
+      bottom: -28px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #pricing {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .p1 {
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+  
+    .p2 {
+      margin-bottom: 0px;
+    }
+  
+    .p1, .p2, .p3 {
+      border: 2px solid #ef382a;
+      text-align: center;
+      width: 300px;
+      height: 300px;
+      max-width: 70vw;
+      min-width: 200px;
+    }
+  
+    #motto {
+      margin: 0 auto 5px auto;
+      font-family: "Metal Mania", sans-serif;
+      font-weight: 500;
+      margin-top: 120px;
+    }
+  
+    .select {
+      position: relative;
+      bottom: -90px;
+      margin-left: -10px;
+      z-index: 0;
+    }
+  
+    .select3 {
+      position: relative;
+      bottom: -56px;
+      margin-left: -10px;
+      margin-bottom: 150px;
+    }
+  }
